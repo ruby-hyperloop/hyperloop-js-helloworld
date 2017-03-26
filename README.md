@@ -1,1 +1,1 @@
-![Screen](hyperloop-js-helloworld/hyperloophelloworldscreenshot.png)
+![Screen](https://github.com/fzingg/hyperloop-js-helloworld/blob/master/hyperloophelloworldscreenshot.png)
