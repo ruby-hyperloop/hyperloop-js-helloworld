@@ -5,4 +5,4 @@
 ## This is a simple application showcasing **Hyperloop**
 
 + For more information about hyperloop technology : [Hyperloop Web site](http://ruby-hyperloop.io/)
-+ Hyperloop.js sopurce code: [Hyperloop.js source code](https://github.com/ruby-hyperloop/hyperloop-js)
++ `Hyperloop.js` source code: [Hyperloop.js source code](https://github.com/ruby-hyperloop/hyperloop-js)
