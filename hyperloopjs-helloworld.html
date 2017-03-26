@@ -20,7 +20,7 @@
     <div id="example"></div>
     <script type="text/ruby">
 
-      class HelloWorld < Hyperloop::Component
+      class Helloworld < Hyperloop::Component
 
         state show_field: false
         state field_value: ""
@@ -36,7 +36,7 @@
         def show_button
           BUTTON(class: 'btn btn-info') do
             state.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
-          end.on(:click) { state.show_field! !state.show_field }
+          end.on(:click) { mutate.show_field !state.show_field }
         end
 
         def show_input
@@ -66,7 +66,7 @@
 
       <img src="hyperloop-logo-medium-white.png">
 
-      <div data-hyperloop-mount="HelloWorld"
+      <div data-hyperloop-mount="Helloworld"
          data-name="">
       </div>
 
