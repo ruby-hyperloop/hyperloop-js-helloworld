@@ -2,7 +2,7 @@
 
 ![Screen](https://github.com/fzingg/hyperloop-js-helloworld/blob/master/hyperloophelloworldscreenshot.png)
 
-This is a simple application showcasing **Hyperloop**
+## This is a simple application showcasing **Hyperloop**
 
-+For more information about hyperloop technology : [Hyperloop Web site](http://ruby-hyperloop.io/)
-+Hyperloop.js sopurce code: [Hyperloop.js source code](https://github.com/ruby-hyperloop/hyperloop-js)
++ For more information about hyperloop technology : [Hyperloop Web site](http://ruby-hyperloop.io/)
++ Hyperloop.js sopurce code: [Hyperloop.js source code](https://github.com/ruby-hyperloop/hyperloop-js)
