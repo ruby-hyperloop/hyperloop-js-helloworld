@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HyperloopJS-helloworld</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- React and JQuery -->
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Opal and Hyperloop -->
+    <script src="https://rawgit.com/ruby-hyperloop/hyperloop-js/master/opal-compiler.min.js"></script>
+    <script src="https://rawgit.com/ruby-hyperloop/hyperloop-js/master/hyperloop.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <script type="text/ruby">
+
+      class HelloWorld < Hyperloop::Component
+
+        state show_field: false
+        state field_value: ""
+
+        render(DIV) do
+          show_button
+          DIV(class: 'formdiv') do
+            show_input
+            H1 { "#{state.field_value}" }
+          end if state.show_field
+        end
+
+        def show_button
+          BUTTON(class: 'btn btn-info') do
+            state.show_field ? "Click to hide HelloWorld input field" : "Click to show HelloWorld input field"
+          end.on(:click) { state.show_field! !state.show_field }
+        end
+
+        def show_input
+          
+          H4 do 
+            span{'Please type '}
+            span.colored {'Hello World'}
+            span{' in the input field below :'}
+            br {}
+            span{'Or anything you want (^̮^)'}
+          end
+          
+          INPUT(type: :text, class: 'form-control').on(:change) do |e|
+            state.field_value! e.target.value
+          end
+        end
+
+        def show_text
+          H1 { "#{state.field_value}" }
+        end
+
+      end
+
+    </script>
+
+    <div class="hyperloophelloword">
+
+      <img src="hyperloop-logo-medium-white.png">
+
+      <div data-hyperloop-mount="HelloWorld"
+         data-name="">
+      </div>
+
+    </div>
+
+  </body>
+</html>
