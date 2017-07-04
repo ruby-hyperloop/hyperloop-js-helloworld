@@ -36,3 +36,28 @@ h4 span.colored {
 	width: 50% !important;
 	margin: 0 auto 0 auto;
 }
+
+.input-datas {
+	width: 80%;
+	margin: 0 auto 0 auto !important;
+
+	.form-control {
+		display: inline !important;
+		margin: 0 !important;
+		margin-right: 20px !important;
+		width: 60%;
+		font-size: 1.1em;
+		font-weight: bold;
+		color: #ed8036 !important;
+	}
+}
+
+.table {
+
+	width: 30% !important;
+	margin: 2em auto 0 auto !important;
+}
+
+button {
+	margin: 0 5px 0 5px !important;
+}
