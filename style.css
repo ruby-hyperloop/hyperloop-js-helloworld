@@ -40,16 +40,16 @@ h4 span.colored {
 .input-datas {
 	width: 80%;
 	margin: 0 auto 0 auto !important;
+}
 
-	.form-control {
-		display: inline !important;
-		margin: 0 !important;
-		margin-right: 20px !important;
-		width: 60%;
-		font-size: 1.1em;
-		font-weight: bold;
-		color: #ed8036 !important;
-	}
+.input-datas.form-control {
+	display: inline !important;
+	margin: 0 !important;
+	margin-right: 20px !important;
+	width: 60%;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #ed8036 !important;
 }
 
 .table {
