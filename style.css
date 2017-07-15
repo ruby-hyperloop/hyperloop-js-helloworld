@@ -42,7 +42,7 @@ h4 span.colored {
 	margin: 0 auto 0 auto !important;
 }
 
-.input-datas.form-control {
+.input-datas .form-control {
 	display: inline !important;
 	margin: 0 !important;
 	margin-right: 20px !important;
